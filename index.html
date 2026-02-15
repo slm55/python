@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Сабақтары: 8-сынып</title>
+    <style>
+        :root {
+            --primary: #3776ab;
+            --secondary: #ffd343;
+            --dark: #2c3e50;
+            --bg: #f4f7f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; background: var(--primary); color: white; border-radius: 15px; margin-bottom: 30px; }
+        
+        .container { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        
+        .card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.2s; border-top: 5px solid var(--secondary); }
+        .card:hover { transform: translateY(-5px); }
+        
+        h3 { color: var(--dark); margin-top: 0; }
+        p { color: #666; font-size: 0.9rem; }
+        
+        .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+        .btn { flex: 1; padding: 10px; text-align: center; text-decoration: none; border-radius: 6px; font-weight: bold; transition: 0.3s; }
+        
+        .btn-view { background: var(--primary); color: white; }
+        .btn-download { background: var(--dark); color: white; }
+        .btn:hover { opacity: 0.8; }
+
+        .icon { font-size: 40px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🐍 Python Сабақтары</h1>
+    <p>8-сынып оқушыларына арналған оқу материалдары</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <div class="icon">📝</div>
+        <h3>1. Strings (Мәтіндік жолдар)</h3>
+        <p>Мәтінмен жұмыс, индекстеу және негізгі функциялар туралы презентация.</p>
+        <div class="btn-group">
+            <a href="Python Strings.pdf" target="_blank" class="btn btn-view">Көру</a>
+            <a href="Python Strings.pdf" download class="btn btn-download">Жүктеу</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">📊</div>
+        <h3>2. CSV файлдарымен жұмыс</h3>
+        <p>Деректерді кесте түрінде сақтау және оларды Python-да ашу негіздері.</p>
+        <div class="btn-group">
+            <a href="Python csv.pdf" target="_blank" class="btn btn-view">Көру</a>
+            <a href="Python csv.pdf" download class="btn btn-download">Жүктеу</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">📈</div>
+        <h3>3. Matplotlib Визуализация</h3>
+        <p>Сандық деректерді графиктер мен диаграммаларға айналдыруды үйренеміз.</p>
+        <div class="btn-group">
+            <a href="Matplotlib.pdf" target="_blank" class="btn btn-view">Көру</a>
+            <a href="Matplotlib.pdf" download class="btn btn-download">Жүктеу</a>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; margin-top: 50px; color: #888;">
+    <p>&copy; 2026 Информатика мұғалімі. Барлық құқықтар қорғалған.</p>
+</footer>
+
+</body>
+</html>
