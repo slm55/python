@@ -30,6 +30,8 @@
         .btn:hover { opacity: 0.8; }
 
         .icon { font-size: 40px; margin-bottom: 10px; }
+
+        .strm2 { display: none; }
     </style>
 </head>
 <body>
@@ -82,11 +84,21 @@
 
       <div class="card">
         <div class="icon">📈</div>
-        <h3>5. Streamlit</h3>
+        <h3>5. Streamlit 1</h3>
         <p>Интерактивті веб-қолданбаларды жасау үшін Python-да қолданылатын кітапхана.</p>
         <div class="btn-group">
             <a href="Streamlit.pdf" target="_blank" class="btn btn-view">Көру</a>
             <a href="Streamlit.pdf" download class="btn btn-download">Жүктеу</a>
+        </div>
+    </div>
+
+    <div class="card strm2">
+        <div class="icon">📈</div>
+        <h3>6. Streamlit 2</h3>
+        <p>Интерактивті веб-қолданбаларды жасау үшін Python-да қолданылатын кітапхана.</p>
+        <div class="btn-group">
+            <a href="Streamlit cont..pdf" target="_blank" class="btn btn-view">Көру</a>
+            <a href="Streamlit cont..pdf" download class="btn btn-download">Жүктеу</a>
         </div>
     </div>
 </div>
@@ -94,6 +106,26 @@
 <footer style="text-align: center; margin-top: 50px; color: #888;">
     <p>&copy; 2026 Информатика мұғалімі. Барлық құқықтар қорғалған.</p>
 </footer>
+
+<script>
+const targetTime = new Date(2026, 2, 2, 9, 25, 0).getTime();
+
+const checkTime = setInterval(() => {
+  const now = new Date().getTime();
+
+  if (now >= targetTime) {
+    const element = document.querySelector('.strm2');
+    
+    if (element) {
+      element.style.display = 'block'; // Or 'flex', 'visible', etc.
+      console.log("Target reached! Div is now visible.");
+    }
+
+    // 2. Stop the interval so it doesn't keep running
+    clearInterval(checkTime);
+  }
+}, 1000); // Checks every 1 second
+</script>
 
 </body>
 </html>
