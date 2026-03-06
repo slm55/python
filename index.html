@@ -101,31 +101,22 @@
             <a href="Streamlit cont..pdf" download class="btn btn-download">Жүктеу</a>
         </div>
     </div>
+
+     <div class="card">
+        <div class="icon">📈</div>
+        <h3>7. Шолу сабағы</h3>
+        <p> Соңғы өткен тақырыптарға шолу .</p>
+        <div class="btn-group">
+            <a href="Review pyhton.pdf" target="_blank" class="btn btn-view">Көру</a>
+            <a href="Review pyhton.pdf" download class="btn btn-download">Жүктеу</a>
+        </div>
+    </div>
 </div>
 
 <footer style="text-align: center; margin-top: 50px; color: #888;">
     <p>&copy; 2026 Информатика мұғалімі. Барлық құқықтар қорғалған.</p>
 </footer>
 
-<script>
-const targetTime = new Date(2026, 2, 2, 9, 25, 0).getTime();
-
-const checkTime = setInterval(() => {
-  const now = new Date().getTime();
-
-  if (now >= targetTime) {
-    const element = document.querySelector('.strm2');
-    
-    if (element) {
-      element.style.display = 'block'; // Or 'flex', 'visible', etc.
-      console.log("Target reached! Div is now visible.");
-    }
-
-    // 2. Stop the interval so it doesn't keep running
-    clearInterval(checkTime);
-  }
-}, 1000); // Checks every 1 second
-</script>
 
 </body>
 </html>
