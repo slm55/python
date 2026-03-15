@@ -111,12 +111,37 @@
             <a href="Review pyhton.pdf" download class="btn btn-download">Жүктеу</a>
         </div>
     </div>
+    <div class="card sa" style="display: none;">
+        <div class="icon">📈</div>
+        <h3>ТЖБ</h3>
+        <p> Тоқсандық жиынтық бағалау </p>
+        <div class="btn-group">
+            <a href="https://wayground.com/join?gc=528788&source=liveDashboard" target="_blank" class="btn btn-view">Бастау</a>
+        </div>
+    </div>
 </div>
 
 <footer style="text-align: center; margin-top: 50px; color: #888;">
     <p>&copy; 2026 Информатика мұғалімі. Барлық құқықтар қорғалған.</p>
 </footer>
 
+<script>
+    window.onload = function() {
+    // Нысаналы уақыт: 2026 жыл, 2 (Наурыз), 16-шы күн, 08:40:00
+    const targetTime = new Date(2026, 2, 16, 8, 40, 0);
+    const currentTime = new Date();
+
+    // Егер қазіргі уақыт нысаналы уақыттан үлкен немесе тең болса
+    if (currentTime >= targetTime) {
+        const saDiv = document.querySelector('.sa');
+        if (saDiv) {
+            saDiv.style.display = 'block';
+        }
+    } else {
+        console.log("Тест әлі басталған жоқ. Сағат 08:40-та бетті қайта жүктеңіз.");
+    }
+};
+</script>
 
 </body>
 </html>
